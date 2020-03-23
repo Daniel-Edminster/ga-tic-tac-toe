@@ -47,6 +47,14 @@ function checkWinCondition()
                     }, 1000);
                   
                 }
+                else {
+                    if(document.querySelectorAll("[data-clicked='1']").length === 9)
+                    {
+                        alert("It's a tie");
+                        resetGrid();
+                    }
+
+                }
             }
     }
 }
